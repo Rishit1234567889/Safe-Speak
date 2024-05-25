@@ -616,4 +616,13 @@ else:
         ("Cyber Bullying Types Dataset + Cyber Troll Dataset + Classified Tweets Dataset + Cyberbulling Classification Dataset", "CountVectorizer", "Bagging Decision Tree"): "90.95%",
         ("Cyber Bullying Types Dataset + Cyber Troll Dataset + Classified Tweets Dataset + Cyberbulling Classification Dataset", "CountVectorizer", "Boosting Decision Tree"): "32%"
     }
+
+
+    key = (data_choice, vect_choice, model_choice)
+    if key in accuracy_mapping:
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.subheader("Evaluation Metrics")
+        st.success(f":green[Accuracy: **_{accuracy_mapping[key]}_**]")
+    else:
+        st.warning(":red[No evaluation metrics available for the selected combination.]")
         
