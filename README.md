@@ -31,5 +31,3 @@ _**SafeSpeak**_ is a  **Machine Learning Web application** for **cyberbullying d
 
 <br>
 
-![Image](https://user-images.githubusercontent.com/51766689/226749340-ca1d14f0-901a-48ae-a645-074a4d3b3410.png)
-
