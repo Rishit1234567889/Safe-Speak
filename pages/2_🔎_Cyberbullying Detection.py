@@ -85,10 +85,24 @@ def transform_text(text):
 tfidf = pickle.load(open('pickle/TFIDFvectorizer.pkl','rb'))
 model = pickle.load(open('pickle/bestmodel.pkl','rb'))
 
-st.title("Cyber-Bullying Detection🔍")
+st.markdown("""
+    <h1 style='font-size: 50px;'>Cyber-Bullying Detection🔍</h1>
+""", unsafe_allow_html=True)
+
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
-input_text = st.text_area("**_Enter the text to analyze_**", key="**_Enter the text to analyze_**")
+
+st.markdown("<h1 style='font-size: 24px; margin-top: -20px; margin-bottom: -50px;'>Enter the text to analyze</h1>", unsafe_allow_html=True)
+st.markdown("""
+    <style>
+    .stTextArea textarea {
+        font-size: 20px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+input_text = st.text_area("", key="**_Enter the text to analyze_**", height=200)
+
 col1, col2 = st.columns([1,6])
 with col1:
     button_predict = st.button('Predict')

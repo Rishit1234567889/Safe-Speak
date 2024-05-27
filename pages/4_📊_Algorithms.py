@@ -34,8 +34,9 @@ st.sidebar.markdown(" <br> <br> <br> <br> <br> <br> <br> <h1 style='text-align: 
 
 
 
-
-st.title("Algorithms📊")
+st.markdown("""
+    <h1 style='font-size: 50px;'>Algorithms📊</h1>
+""", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
 
