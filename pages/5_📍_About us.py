@@ -32,8 +32,9 @@ st.sidebar.markdown("<br> <br> <br> <br> <br> <br> <br> <h1 style='text-align: c
 
 
 
-
-st.title("About us📍")
+st.markdown("""
+    <h1 style='font-size: 50px;'>About us📍</h1>
+""", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
 

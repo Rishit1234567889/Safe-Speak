@@ -29,7 +29,11 @@ st.sidebar.markdown("---")
 
 st.sidebar.markdown(" <br> <br> <br> <br> <br> <br> <br> <h1 style='text-align: center; font-size: 18px; color: #0080FF;'>© 2024 | SafeSpeak </h1>", unsafe_allow_html=True)
 
-st.title("Algorithms📊")
+
+
+st.markdown("""
+    <h1 style='font-size: 50px;'>Algorithms📊</h1>
+""", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
 
