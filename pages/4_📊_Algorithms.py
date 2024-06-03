@@ -123,7 +123,8 @@ else:
 
 
 
-
+    ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Logistic Regression"): "78.12%",
+    ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Decision Tree"): "85.45%",
     ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Random Forest"): "90.29%", 
     ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "XGBoost"): "75.52%",
     ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Naive Bayes"): "79.95%",
