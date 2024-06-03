@@ -41,7 +41,9 @@ all_Datasets = ["Select a Dataset", "Cyber Bullying Types Dataset", "Cyber Troll
 data_choice: Optional[str] = st.selectbox("Dataset", all_Datasets)
 all_Vectorizers = ["Select a Vectorizer", "TF-IDF", "CountVectorizer"]
 vect_choice: Optional[str] = st.selectbox("Vectorizer", all_Vectorizers)
-all_ML_models = ["Select a Machine Learning Algorithm", "Logistic Regression", "Decision Tree", "Random Forest", "XGBoost", "Naive Bayes", "Support Vector Machine", "Bagging Decision Tree", "Boosting Decision Tree"]
+all_ML_models = ["Select a Machine Learning Algorithm", "Logistic Regression", "Decision Tree", "Random Forest", "XGBoost", "Naive Bayes", "Support Vector Machine"]
+# "Bagging Decision Tree", 
+# "Boosting Decision Tree"
 model_choice: Optional[str] = st.selectbox("Machine Learning Algorithm", all_ML_models)
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("---")
@@ -121,7 +123,8 @@ else:
 
 
 
-
+    ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Logistic Regression"): "78.12%",
+    ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Decision Tree"): "85.45%",
     ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Random Forest"): "90.29%", 
     ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "XGBoost"): "75.52%",
     ("Cyber Bullying Types Dataset + Cyber Troll Dataset", "TF-IDF", "Naive Bayes"): "79.95%",
